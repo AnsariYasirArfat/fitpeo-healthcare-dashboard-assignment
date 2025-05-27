@@ -9,9 +9,17 @@ import colors from "@/styles/colors";
 const AppBackground = styled.div`
   min-height: 100svh;
   background: ${colors.backgroundBase};
-  overflow: hidden;
+  overflow: auto;
   color: ${colors.textPrimary};
   padding: 10px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 5px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 0;
+  }
 `;
 
 const MainLayout = styled.div`
@@ -22,8 +30,13 @@ const MainLayout = styled.div`
   display: flex;
   flex-direction: row;
   margin: 2px;
+
   @media (max-width: ${breakpoints.tablet}) {
-    flex-direction: column;
+    border-radius: 24px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    border-radius: 12px;
   }
 `;
 

@@ -11,7 +11,13 @@ import { ChevronDown } from "lucide-react";
 
 const DashboardOverview = () => (
   <OverviewWrapper>
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "space-between",
+        marginBottom: "4px",
+      }}
+    >
       <h1 style={{ margin: 0 }}>Dashboard</h1>
       <div
         style={{
@@ -22,7 +28,7 @@ const DashboardOverview = () => (
         }}
       >
         <span>This Week </span>
-        <ChevronDown size={15}/>
+        <ChevronDown size={15} />
       </div>
     </div>
     <Top>

@@ -3,7 +3,7 @@ import breakpoints from "@/styles/breakpoints";
 import colors from "@/styles/colors";
 
 export const CalendarBox = styled.div`
-  // padding: 0 1rem 0;
+  gap: 1rem;
 `;
 
 export const CalendarHeader = styled.div`
@@ -11,11 +11,18 @@ export const CalendarHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  @media (max-width: ${breakpoints.mobile}) {
+    margin-bottom: 0.8rem;
+  }
 `;
 
 export const Month = styled.div`
   font-weight: 700;
   font-size: 1.2rem;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const NavArrows = styled.div`
@@ -23,6 +30,11 @@ export const NavArrows = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  svg {
+    width: 18px;
+    height: 18px;
+  }
 `;
 
 export const CalendarGrid = styled.div`
@@ -46,18 +58,33 @@ export const DayCol = styled.div`
   border-radius: 10px;
   background: ${({ day }) => (day === "Tue" ? colors.violetLight : "inherit")};
   color: ${({ day }) => (day === "Sun" ? colors.textSecondary : "inherit")};
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 2px;
+    border-radius: 8px;
+  }
 `;
 
 export const DayLabel = styled.div`
   font-size: 0.85rem;
   margin-bottom: 0.3rem;
   font-weight: 600;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.5rem;
+    margin-bottom: 0.1rem;
+  }
 `;
 
 export const DateNum = styled.div`
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 0.4rem;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+  }
 `;
 
 export const TimeSlot = styled.div`
@@ -85,17 +112,28 @@ export const TimeSlot = styled.div`
   text-align: center;
   box-shadow: ${({ active }) =>
     active === "primary" ? `0 2px 8px ${colors.shadow}` : "none"};
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.6rem;
+    padding: 0.15rem 0.5rem;
+    margin: 0.1rem 0;
+    border-radius: ${({ join, isFirst, isLast }) =>
+      join ? (isFirst ? "6px 0 0 6px" : isLast ? "0 6px 6px 0" : "0") : "6px"};
+  }
 `;
 
 export const AppointmentCards = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 0.6rem;
-  // padding: 0 1rem 0;
+  margin-top: 1rem;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    gap: 0.8rem;
+  }
 
   @media (max-width: ${breakpoints.mobile}) {
-    flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 `;
 
@@ -111,4 +149,32 @@ export const AppointmentCard = styled.div`
   gap: 0.3rem;
   font-size: 1rem;
   box-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 0.8rem;
+    border-radius: 24px;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 0.7rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin: 0;
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size: 0.8rem;
+    }
+  }
+  p {
+    font-size: 1rem;
+    margin: 0;
+    @media (max-width: ${breakpoints.mobile}) {
+      font-size: 0.7rem;
+    }
+  }
 `;

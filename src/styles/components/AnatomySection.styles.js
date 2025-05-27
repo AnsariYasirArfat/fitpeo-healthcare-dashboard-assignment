@@ -7,19 +7,17 @@ export const AnatomyContainer = styled.div`
   background: ${colors.backgroundLight};
   border-radius: 28px;
   padding: 2.5rem 3rem;
-  min-height: 390px;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
 
   @media (max-width: ${breakpoints.tablet}) {
-    min-height: 300px;
     padding: 1.5rem;
+    border-radius: 24px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    min-height: 250px;
     padding: 1rem;
     border-radius: 20px;
   }
@@ -38,11 +36,11 @@ export const AnatomyImage = styled.img`
   z-index: 1;
 
   @media (max-width: ${breakpoints.tablet}) {
-    height: 200px;
+    height: 300px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    height: 160px;
+    height: 220px;
   }
 `;
 
@@ -51,7 +49,8 @@ export const Indicator = styled.div`
   display: flex;
   align-items: center;
   padding: 0.5rem 0.5rem;
-  border-radius: 14px;  white-space: nowrap; 
+  border-radius: 14px;
+  white-space: nowrap;
   font-size: 1rem;
   font-weight: 500;
   color: ${({ color }) => color || colors.textPrimary};
@@ -64,6 +63,17 @@ export const Indicator = styled.div`
   span {
     margin-right: 0.6rem;
     font-size: 1.5rem;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.4rem;
+    border-radius: 10px;
+    svg,
+    span {
+      margin-right: 0.4rem;
+      font-size: 1.2rem;
+    }
   }
 `;
 
@@ -83,4 +93,10 @@ export const Magnifier = styled.div`
   color: #8e9aac;
   cursor: pointer;
   z-index: 3;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
 `;

@@ -18,7 +18,8 @@ const UpcomingSchedule = () => (
           style={{
             fontWeight: "bold",
             display: "flex",
-            gap: "1.5rem",
+            flexWrap: "wrap",
+            gap: "1rem",
           }}
         >
           {section.items.map((item) => (

@@ -10,6 +10,12 @@ export const Card = styled.div`
   margin: 0.5rem 0;
   font-size: 1rem;
 
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 1rem 1.5rem;
+    border-radius: 18px;
+    font-size: 0.8rem;
+  }
+
   @media (max-width: ${breakpoints.mobile}) {
     padding: 1rem;
     border-radius: 16px;
@@ -24,8 +30,14 @@ export const Title = styled.div`
 
 export const Time = styled.div`
   font-size: 1rem;
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const Icon = styled.span`
   font-size: 1.2rem;
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 1rem;
+  }
 `;

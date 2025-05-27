@@ -20,22 +20,31 @@ const Header = () => (
       <Logo>
         <span>Health</span>care.
       </Logo>
-      <SearchWrapper>
-        <SearchInput placeholder="Search" />
-        <SearchIcon>
-          <Search />
-        </SearchIcon>
-      </SearchWrapper>
-      <BellWrapper>
-        <Bell color={colors.violetDark} fill={colors.violetDark} size={20} />
-      </BellWrapper>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "1rem",
+          flex: 1,
+        }}
+      >
+        <SearchWrapper>
+          <SearchInput placeholder="Search" />
+          <SearchIcon>
+            <Search size={20} />
+          </SearchIcon>
+        </SearchWrapper>
+        <BellWrapper>
+          <Bell color={colors.violetDark} fill={colors.violetDark} size={20} />
+        </BellWrapper>
+      </div>
     </LeftSection>
     <RightSection>
       <Avatar>
         <span aria-label="avatar">🧑‍⚕️</span>
       </Avatar>
       <AddButton>
-        <Plus  size={20}/>
+        <Plus size={20} />
       </AddButton>
     </RightSection>
   </HeaderContainer>

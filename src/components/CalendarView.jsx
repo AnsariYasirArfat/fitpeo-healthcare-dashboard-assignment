@@ -55,13 +55,11 @@ const CalendarView = () => (
               gap: "0.2rem",
             }}
           >
-            <h1 style={{ fontSize: "1rem", fontWeight: 800, margin: "0" }}>
-              {card.title}
-            </h1>
+            <h1>{card.title}</h1>
             <span aria-label="icon">{card.icon}</span>
           </div>
-          <div style={{ fontSize: "0.98rem" }}>{card.time}</div>
-          <div style={{ fontSize: "0.97rem" }}>{card.doctor} </div>
+          <p>{card.time}</p>
+          <p>{card.doctor} </p>
         </AppointmentCard>
       ))}
     </AppointmentCards>

@@ -9,8 +9,13 @@ export const ActivityBox = styled.div`
   margin-top: 1rem;
   box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
 
-  @media (max-width: 600px) {
-    padding: 1rem 0.5rem 1rem 0.5rem;
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 1.2rem 0.8rem;
+    border-radius: 18px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 1rem 0.5rem;
     border-radius: 14px;
   }
 `;
@@ -26,12 +31,20 @@ export const Title = styled.div`
   font-weight: 800;
   font-size: 1.4rem;
   color: #22223b;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 1rem;
+  }
 `;
 
 export const SubText = styled.div`
   color: #8e9aac;
   font-size: 1.15rem;
   font-weight: 600;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.8rem;
+  }
 `;
 
 export const ChartWrapper = styled.div`
@@ -42,9 +55,12 @@ export const ChartWrapper = styled.div`
   margin-top: 0.1rem;
 
   @media (max-width: ${breakpoints.tablet}) {
+    flex-wrap: wrap;
+    gap: 12px;
   }
 
   @media (max-width: ${breakpoints.mobile}) {
+    gap: 10px;
   }
 `;
 
@@ -60,6 +76,11 @@ export const Bar = styled.div`
   background: ${({ color }) => color};
   height: ${({ height }) => height};
   margin-bottom: 4px;
+  @media (max-width: ${breakpoints.tablet}) {
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+  }
 `;
 
 export const DayLabel = styled.div`
@@ -68,4 +89,8 @@ export const DayLabel = styled.div`
   font-weight: 700;
   color: ${colors.textSecondary};
   margin-top: 0.3rem;
+
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.6rem;
+  }
 `;

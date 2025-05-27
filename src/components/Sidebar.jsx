@@ -16,13 +16,22 @@ import {
   LayoutDashboard,
   MessageCircle,
   Phone,
+  Settings,
 } from "lucide-react";
 import colors from "@/styles/colors";
 
 const Sidebar = () => {
   const navigationData = {
     general: [
-      { label: "Dashboard", icon: <LayoutDashboard color={colors.textPrimary} fill={colors.textPrimary}/> },
+      {
+        label: "Dashboard",
+        icon: (
+          <LayoutDashboard
+            color={colors.textPrimary}
+            fill={colors.textPrimary}
+          />
+        ),
+      },
       { label: "History", icon: <History /> },
       { label: "Calendar", icon: <CalendarDays /> },
       { label: "Appointments", icon: <FilePlus2 /> },
@@ -60,7 +69,10 @@ const Sidebar = () => {
       <Spacer />
 
       <Setting>
-        <Icon>⚙️</Icon> Setting
+        <Icon>
+          <Settings />
+        </Icon>
+        Setting
       </Setting>
     </SidebarContainer>
   );

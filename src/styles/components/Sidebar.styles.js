@@ -14,15 +14,9 @@ export const SidebarContainer = styled.aside`
   box-shadow: 0 2px 24px rgba(79, 140, 255, 0.04);
 
   @media (max-width: ${breakpoints.tablet}) {
-    position: fixed;
-    left: -240px;
-    top: 0;
-    z-index: 100;
-    transition: left 0.3s ease;
-
-    &.open {
-      left: 0;
-    }
+    display: none;
+  }
+  @media (max-width: ${breakpoints.mobile}) {
   }
 `;
 
@@ -32,6 +26,10 @@ export const SectionTitle = styled.div`
   font-weight: 600;
   margin: 2.2rem 0 1rem 0;
   letter-spacing: 0.5px;
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.85rem;
+    margin: 1.8rem 0 0.8rem 0;
+  }
 `;
 
 export const Nav = styled.nav`
@@ -50,6 +48,11 @@ export const NavLink = styled.a`
   font-weight: ${({ active }) => (active ? 700 : 500)};
   color: ${({ active }) => (active ? "#22223b" : "#8e9aac")};
   text-decoration: none;
+  @media (max-width: ${breakpoints.mobile}) {
+    padding: 0.7rem 1rem;
+    font-size: 0.9rem;
+    gap: 0.8rem;
+  }
 `;
 
 export const Icon = styled.span`
@@ -75,5 +78,10 @@ export const Setting = styled.div`
   &:hover {
     background: #e0e7ff;
     color: #22223b;
+  }
+  @media (max-width: ${breakpoints.mobile}) {
+    font-size: 0.95rem;
+    padding: 0.6rem 1rem;
+    gap: 0.8rem;
   }
 `;

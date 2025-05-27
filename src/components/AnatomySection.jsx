@@ -1,18 +1,24 @@
-import React from 'react';
-import anatomyIndicators from '@/data/anatomyData';
-import { AnatomyContainer, AnatomyImageWrapper, AnatomyImage, Indicator, Magnifier } from '@/styles/components/AnatomySection.styles';
-import { ZoomIn } from 'lucide-react';
+import React from "react";
+import anatomyIndicators from "@/data/anatomyData";
+import {
+  AnatomyContainer,
+  AnatomyImageWrapper,
+  AnatomyImage,
+  Indicator,
+  Magnifier,
+} from "@/styles/components/AnatomySection.styles";
+import { ZoomIn } from "lucide-react";
 
-const anatomyImg = "/src/assets/human_body.png";
+const anatomyImg = "/assets/human_body.png";
 
 const AnatomySection = () => (
   <AnatomyContainer>
     <Magnifier>
-    <ZoomIn />
+      <ZoomIn />
     </Magnifier>
     <AnatomyImageWrapper>
       <AnatomyImage src={anatomyImg} alt="Human Anatomy" />
-      {anatomyIndicators.map(ind => (
+      {anatomyIndicators.map((ind) => (
         <Indicator
           key={ind.label}
           bgColor={ind.bgColor}
