@@ -1,0 +1,86 @@
+import styled from "styled-components";
+import breakpoints from "@/styles/breakpoints";
+import colors from "@/styles/colors";
+
+export const AnatomyContainer = styled.div`
+  position: relative;
+  background: ${colors.backgroundLight};
+  border-radius: 28px;
+  padding: 2.5rem 3rem;
+  min-height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
+
+  @media (max-width: ${breakpoints.tablet}) {
+    min-height: 300px;
+    padding: 1.5rem;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    min-height: 250px;
+    padding: 1rem;
+    border-radius: 20px;
+  }
+`;
+
+export const AnatomyImageWrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const AnatomyImage = styled.img`
+  height: 480px;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.08));
+  z-index: 1;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    height: 200px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+    height: 160px;
+  }
+`;
+
+export const Indicator = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  border-radius: 14px;  white-space: nowrap; 
+  font-size: 1rem;
+  font-weight: 500;
+  color: ${({ color }) => color || colors.textPrimary};
+  background: ${({ bgColor }) => bgColor || colors.violetMedium};
+  left: ${({ left }) => left};
+  top: ${({ top }) => top};
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.12);
+  svg,
+  span {
+    margin-right: 0.6rem;
+    font-size: 1.5rem;
+  }
+`;
+
+export const Magnifier = styled.div`
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: #f4f7fe;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
+  font-size: 1.2rem;
+  color: #8e9aac;
+  cursor: pointer;
+  z-index: 3;
+`;
