@@ -54,7 +54,7 @@ export const DayCol = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4px;
+  padding: 1rem 0;
   border-radius: 10px;
   background: ${({ day }) => (day === "Tue" ? colors.violetLight : "inherit")};
   color: ${({ day }) => (day === "Sun" ? colors.textSecondary : "inherit")};
@@ -148,7 +148,7 @@ export const AppointmentCard = styled.div`
   flex-direction: column;
   gap: 0.3rem;
   font-size: 1rem;
-  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 
   @media (max-width: ${breakpoints.tablet}) {
     padding: 0.8rem;

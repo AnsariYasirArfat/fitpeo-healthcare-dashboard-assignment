@@ -153,13 +153,13 @@ export const Avatar = styled.div`
   height: 36px;
   background: ${colors.accentCyan};
   border-radius: 12px;
-  border: 2.5px solid #fff;
+ 
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.3rem;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.1);
+ box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
   @media (max-width: ${breakpoints.mobile}) {
     width: 32px;
     height: 32px;
@@ -179,7 +179,7 @@ export const AddButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.1);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
   transition: background 0.2s;
   &:hover {
     background: #2563eb;

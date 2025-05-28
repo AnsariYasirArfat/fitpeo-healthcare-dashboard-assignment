@@ -38,12 +38,12 @@ export const LeftColumn = styled.div`
 
 export const RightColumn = styled.div`
   background: ${colors.backgroundLight};
-  margin: 8px;
+  margin: 10px;
   flex: 1;
   border-top-right-radius: 36px;
   border-bottom-right-radius: 36px;
   padding: 8rem 1.5rem 2rem;
-
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;

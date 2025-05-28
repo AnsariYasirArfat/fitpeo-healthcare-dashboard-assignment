@@ -18,8 +18,8 @@ const ActivityFeed = () => (
       <SubText>3 appointment on this week</SubText>
     </TitleRow>
     <ChartWrapper>
-      {activityData.map((item) => (
-        <div key={item.day}>
+      {activityData.map((item, idx) => (
+        <div key={item.day + idx}>
           <div
             style={{
               display: "flex",
@@ -28,9 +28,13 @@ const ActivityFeed = () => (
             }}
           >
             {item.barGroups.map((group, i) => (
-              <BarGroup key={i} style={group.style}>
+              <BarGroup key={"bar-group" + i} style={group.style}>
                 {group.bars.map((bar, j) => (
-                  <Bar key={j} color={bar.color} height={bar.height} />
+                  <Bar
+                    key={bar.color + "bar" + j}
+                    color={bar.color}
+                    height={bar.height}
+                  />
                 ))}
               </BarGroup>
             ))}

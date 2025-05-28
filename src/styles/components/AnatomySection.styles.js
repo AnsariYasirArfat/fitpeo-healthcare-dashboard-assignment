@@ -10,7 +10,7 @@ export const AnatomyContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 
   @media (max-width: ${breakpoints.tablet}) {
     padding: 1.5rem;
@@ -58,7 +58,7 @@ export const Indicator = styled.div`
   left: ${({ left }) => left};
   top: ${({ top }) => top};
   z-index: 2;
-  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.12);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
   svg,
   span {
     margin-right: 0.6rem;
@@ -81,14 +81,11 @@ export const Magnifier = styled.div`
   position: absolute;
   top: 1.2rem;
   right: 1.2rem;
-  background: #f4f7fe;
-  border-radius: 50%;
   width: 32px;
   height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(79, 140, 255, 0.08);
   font-size: 1.2rem;
   color: #8e9aac;
   cursor: pointer;

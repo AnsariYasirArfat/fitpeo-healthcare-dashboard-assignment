@@ -46,9 +46,9 @@ const Sidebar = () => {
     <SidebarContainer>
       <SectionTitle>General</SectionTitle>
       <Nav>
-        {navigationData.general.map((link) => (
+        {navigationData.general.map((link, idx) => (
           <NavLink
-            key={link.label}
+            key={link.label + idx}
             href="#"
             active={link.label === "Dashboard"}
           >
@@ -59,8 +59,8 @@ const Sidebar = () => {
 
       <SectionTitle>Tools</SectionTitle>
       <Nav>
-        {navigationData.tools.map((link) => (
-          <NavLink key={link.label} href="#" active={link.active}>
+        {navigationData.tools.map((link, idx) => (
+          <NavLink key={link.label + idx} href="#" active={link.active}>
             <Icon>{link.icon}</Icon> {link.label}
           </NavLink>
         ))}

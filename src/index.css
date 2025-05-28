@@ -4,3 +4,14 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Hide scrollbar for entire page */
+body, html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  overflow-x: hidden; /* optional: if you only want vertical scrolling */
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}

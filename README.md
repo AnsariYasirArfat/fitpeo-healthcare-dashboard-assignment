@@ -1,12 +1,71 @@
-# React + Vite
+# FitPeo Healthcare Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+FitPeo Healthcare Dashboard is a modern healthcare platform that provides a comprehensive dashboard interface design for managing healthcare services. This project is built using React and modern web technologies with a focus on clean design.
 
-Currently, two official plugins are available:
+## Features
+- Responsive design for all devices
+- Modern and intuitive user interface
+- Clean and professional design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+- React.js (v19.1.0)
+- Vite (v6.3.5)
+- Styled Components (v6.1.18)
+- Lucide React (v0.511.0)
 
-## Expanding the ESLint configuration
+## Live Demo
+[View Live Demo](https://fitpeo-healthcare-dashboard-assignment.vercel.app/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Screenshots
+![Dashboard UI](https://github.com/AnsariYasirArfat/fitpeo-healthcare-dashboard-assignment/blob/main/public/Dashboard-UI-FitPeo.png)
+
+## Design Reference
+![Design Reference](https://i.ibb.co/B2DdGkgF/Screenshot-2025-05-23-at-3-31-31-PM.png)
+
+## Developer
+### Ansari Yaseer Arfat
+- [Resume](https://github.com/AnsariYasirArfat/Resume/blob/main/Ansari-Yaseer.pdf)
+- [Github Account](https://github.com/AnsariYasirArfat)
+- [LinkedIn Profile](https://www.linkedin.com/in/yaseeransari)
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+1. Clone the repository
+```bash
+git clone https://github.com/AnsariYasirArfat/fitpeo-healthcare-dashboard-assignment.git
+```
+
+2. Install dependencies
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server
+```bash
+npm run dev
+# or
+yarn dev
+```
+
+4. Build for production
+```bash
+npm run build
+# or
+yarn build
+```
+
+## Project Structure
+```
+src/
+├── components/ # Reusable UI components
+├── styles/ # Global styles
+└── data/ # Dummy data
+```

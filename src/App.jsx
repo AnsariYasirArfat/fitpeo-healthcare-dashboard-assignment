@@ -7,11 +7,12 @@ import breakpoints from "@/styles/breakpoints";
 import colors from "@/styles/colors";
 
 const AppBackground = styled.div`
+  font-family: 'Poppins', sans-serif;
   min-height: 100svh;
   background: ${colors.backgroundBase};
   overflow: auto;
   color: ${colors.textPrimary};
-  padding: 10px;
+  padding: 6px;
 
   @media (max-width: ${breakpoints.tablet}) {
     padding: 5px;

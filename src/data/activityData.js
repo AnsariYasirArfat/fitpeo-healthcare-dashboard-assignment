@@ -181,30 +181,6 @@ const activityData = [
       },
     ],
   },
-  // {
-  //   day: "Mon",
-  //   barGroups: [
-  //     {
-  //       bars: [{ height: "150px", color: colors.lightGrey }],
-  //       style: {},
-  //     },
-  //     {
-  //       bars: [{ height: "80px", color: colors.accentCyan }],
-  //       style: { alignSelf: "center" },
-  //     },
-  //     {
-  //       bars: [
-  //         { height: "35px", color: colors.lightGrey },
-  //         { height: "35px", color: colors.lightGrey },
-  //       ],
-  //       style: { marginTop: "55px" },
-  //     },
-  //     {
-  //       bars: [{ height: "50px", color: colors.lightGrey }],
-  //       style: { marginTop: "auto" },
-  //     },
-  //   ],
-  // },
 ];
 
 export default activityData;

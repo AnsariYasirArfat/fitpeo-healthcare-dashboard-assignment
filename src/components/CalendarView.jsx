@@ -45,8 +45,8 @@ const CalendarView = () => (
       ))}
     </CalendarGrid>
     <AppointmentCards>
-      {appointmentCards.map((card) => (
-        <AppointmentCard key={card.title} primary={card.primary}>
+      {appointmentCards.map((card, idx) => (
+        <AppointmentCard key={card.title + idx} primary={card.primary}>
           <div
             style={{
               fontWeight: "bold",

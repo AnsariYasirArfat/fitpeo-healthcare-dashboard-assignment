@@ -4,14 +4,14 @@ import colors from "../colors";
 
 export const SidebarContainer = styled.aside`
   background: ${colors.backgroundLight};
-  margin: 8px;
+  margin: 10px;
   border-top-left-radius: 36px;
   border-bottom-left-radius: 36px;
   min-height: 100vh;
   padding: 8rem 1rem 2rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 2px 24px rgba(79, 140, 255, 0.04);
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 
   @media (max-width: ${breakpoints.tablet}) {
     display: none;

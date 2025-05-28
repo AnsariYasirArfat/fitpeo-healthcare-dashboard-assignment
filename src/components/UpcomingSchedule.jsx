@@ -11,8 +11,8 @@ import { upcomingAppointments } from "@/data/appointments";
 const UpcomingSchedule = () => (
   <ScheduleBox>
     <SectionTitle>The Upcoming Schedule</SectionTitle>
-    {upcomingAppointments.map((section) => (
-      <DaySection key={section.day}>
+    {upcomingAppointments.map((section, idx) => (
+      <DaySection key={section.day + idx}>
         <DayLabel>{section.day}</DayLabel>
         <div
           style={{
@@ -22,9 +22,9 @@ const UpcomingSchedule = () => (
             gap: "1rem",
           }}
         >
-          {section.items.map((item) => (
+          {section.items.map((item, idx) => (
             <SimpleAppointmentCard
-              key={item.title}
+              key={item.title + idx}
               title={item.title}
               time={item.time}
               icon={item.icon}

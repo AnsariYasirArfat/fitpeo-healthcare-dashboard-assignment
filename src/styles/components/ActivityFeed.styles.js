@@ -7,7 +7,7 @@ export const ActivityBox = styled.div`
   border-radius: 20px;
   padding: 1.5rem 1rem;
   margin-top: 1rem;
-  box-shadow: 0 4px 24px rgba(79, 140, 255, 0.08);
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.06);
 
   @media (max-width: ${breakpoints.tablet}) {
     padding: 1.2rem 0.8rem;
@@ -60,7 +60,7 @@ export const ChartWrapper = styled.div`
   }
 
   @media (max-width: ${breakpoints.mobile}) {
-    gap: 10px;
+    gap: 8px;
   }
 `;
 

@@ -18,9 +18,9 @@ const AnatomySection = () => (
     </Magnifier>
     <AnatomyImageWrapper>
       <AnatomyImage src={anatomyImg} alt="Human Anatomy" />
-      {anatomyIndicators.map((ind) => (
+      {anatomyIndicators.map((ind, idx) => (
         <Indicator
-          key={ind.label}
+          key={ind.label + idx}
           bgColor={ind.bgColor}
           color={ind.color}
           left={ind.left}
